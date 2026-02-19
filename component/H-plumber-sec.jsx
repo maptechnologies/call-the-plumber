@@ -9,7 +9,7 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto grid grid-cols-1  sm:grid-cols-2 md:grid-cols-4 gap-12 mb-20">
 
         {/* Item 1 */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 mb-70">
           <Image
             src="/image/4fdd85702abbcf41468b22da9a3da9d8.png"
             alt="Our Plumbers"
@@ -76,7 +76,7 @@ export default function AboutSection() {
             We love Plumbers
           </h2>
 
-          <p className="text-gray-700 leading-relaxed mb-7">
+          <p className="text-gray-700 leading-relaxed mb-8 text-md">
             Call the plumber was formed to make it easy for homeowners and
             businesses to find a great plumber. Quickly and without fear, who
             has been vetted by CTP that he’s not a bad guy, but a good guy who

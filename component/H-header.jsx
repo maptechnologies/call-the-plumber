@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Head from "next/head";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,22 +20,75 @@ export default function Header() {
       </Head>
 
       {/* Top Bar */}
-      <div style={{ backgroundColor: "#FFD500", padding: "5px 0" }}>
-        <div style={{ maxWidth: "1200px", margin: "0 auto", display: "flex", justifyContent: "20px", alignItems: "center", padding: "0 35px", minHeight: "60px"}}>
-          {/* Left: Social */}
-          <div>
-            <span style={{ marginRight: "10px", fontWeight: "bold"  }}>Follow us:</span>
-            <a href="#" style={{ marginRight: "5px", color: "#1877F2" }}><i className="fa fa-facebook"></i></a>
-            <a href="#" style={{ marginRight: "5px", color: "#1DA1F2" }}><i className="fa fa-twitter"></i></a>
-            <a href="#" style={{ color: "#E4405F" }}><i className="fa fa-instagram"></i></a>
-          </div>
+     <div style={{ backgroundColor: "#FFD500", padding: "5px 0" }}>
+  <div
+    style={{
+      maxWidth: "1200px",
+      margin: "0 auto",
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      padding: "0 35px",
+      minHeight: "60px",
+    }}
+  >
+    {/* Left Section */}
+    <div style={{ display: "flex", alignItems: "center" }}>
+      <span
+        style={{
+          marginRight: "15px",
+          fontWeight: "bold",
+          color: "black",
+        }}
+      >
+        Follow Us:
+      </span>
 
-          {/* Right: Text */}
-          <div style={{ color: "red", fontWeight: "bold", marginLeft:"299px", }}>
-            Plumbers bridge the gap between civility and chaos
-          </div>
+      <div style={{ display: "flex", gap: "10px" }}>
+        <div style={{ background: "#1877F2", padding: "8px", borderRadius: "50%", color: "white", cursor: "pointer" }}>
+          <FaFacebookF />
+        </div>
+
+        <div style={{ background: "#1DA1F2", padding: "8px", borderRadius: "50%", color: "white", cursor: "pointer" }}>
+          <FaTwitter />
+        </div>
+
+        <div style={{ background: "#E1306C", padding: "8px", borderRadius: "50%", color: "white", cursor: "pointer" }}>
+          <FaInstagram />
         </div>
       </div>
+    </div>
+
+    {/* Center Text */}
+    <div
+      style={{
+        color: "red",
+        fontWeight: "bold",
+        fontSize: "18px",
+        textAlign: "center",
+        flex: 1,
+      }}
+    >
+      Plumbers bridge the gap between civility and chaos
+    </div>
+
+    {/* Right Section */}
+    <div>
+      <select
+        style={{
+          padding: "5px 10px",
+          // borderRadius: "4px",
+          border: "1px solid gray",
+          color:"black",
+        }}
+      >
+        <option>🇺🇸 English</option>
+        <option>🇵🇰 Urdu</option>
+      </select>
+    </div>
+  </div>
+</div>
+
 
       {/* Navbar */}
       <div style={{ backgroundColor: "#fff", borderBottom: "2px solid #ccc" }}>
@@ -48,12 +102,12 @@ export default function Header() {
           </div>
 
           {/* Menu */}
-          <ul style={{ display: "flex", listStyle: "none", gap: "20px", margin: 0, padding: 0,  }}>
+          <ul style={{ display: "flex", listStyle: "none", gap: "30px", margin: 0, padding: 0, fontWeight: "semibold", text:"2xl",  }}>
             <li><a href="/" style={{ textDecoration: "none", color: "#000" }}>Home</a></li>
             <li><a href="/plumber" style={{ textDecoration: "none", color: "#000" }}>plumber</a></li>
             <li><a href="/testimonial" style={{ textDecoration: "none", color: "#000" }}>Testimonial</a></li>
             <li><a href="/pricing" style={{ textDecoration: "none", color: "#000" }}>pricing</a></li>
-            <li><a href="/contact_us" style={{ textDecoration: "none", color: "#000" }}>Contact</a></li>
+            <li><a href="/contact" style={{ textDecoration: "none", color: "#000" }}>Contact</a></li>
           </ul>
 
           {/* Buttons */}

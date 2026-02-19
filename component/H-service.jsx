@@ -10,8 +10,8 @@ export default function ServicesSection() {
         <Image
           src="/image/23sa156c1.png"
           alt="Wrench"
-          width={200}
-          height={500}
+          width={250}
+          height={550}
         />
       </div>
 
@@ -38,7 +38,7 @@ export default function ServicesSection() {
               src="/image/919b5ef743165cf20e6a52b41f5f016b.png"
               alt="Bathrooms"
               width={450}
-              height={550}
+              height={500}
               className="object-cover w-full h-[400px]"
             />
             <div className="absolute inset-0 bg-black/50"></div>

@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section
       className="relative w-full h-[650px] flex items-center justify-center"
       style={{
-        backgroundImage: "url('/image/e64c45318dde5308774f4fd48078f1de.jpg')",
+        backgroundImage: "url('/image/hero-img.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -34,9 +34,9 @@ export default function HeroSection() {
         </p>
 
         {/* Search Box */}
-        <div className="mt-12 flex justify-center">
+        <div className="mt-12 flex justify-center border-2 border-amber-600">
 
-          <div className="flex w-full max-w-3xl bg-white rounded-full overflow-hidden shadow-2xl">
+          <div className="flex w-full max-w-3xl bg-white rounded-full  overflow-hidden shadow-2xl">
 
             <input
               type="text"
@@ -44,7 +44,7 @@ export default function HeroSection() {
               className="flex-1 px-8 py-8 text-2xl text-black outline-none font-extrabold"
             />
 
-            <button className="bg-yellow-400 hover:bg-yellow-500 transition-all duration-300 px-10 text-red-600 font-bold text-2xl">
+            <button className="bg-yellow-400 hover:bg-yellow-500 transition-all duration-300 px-10 text-red-600 font-extrabold text-2xl">
               Click here to <br/>find the plumber
             </button>
 
